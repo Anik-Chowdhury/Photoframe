@@ -20,7 +20,9 @@ k = []
 for h in Student_Id:
     g = 'F:/last/pic/' + str(h) + '.png'
     k.append(g)
-'''
+    
+    
+    
 def download_file_from_google_drive(id, destination):
     URL = "https://docs.google.com/uc?export=download"
 
@@ -59,7 +61,6 @@ if __name__ == "__main__":
         destination = e
         download_file_from_google_drive(file_id, destination)
 
-'''
 arr = os.listdir('F:/last/pic')
 
 picinpicfolder = []
@@ -95,7 +96,7 @@ for o, p,inter, real in zip(Name, Student_Id, interest, edited):
 
 
     mimage.save(real)
-'''
+
 lis = []
 for gig in arr:
     gi = int(gig[:-4])
@@ -129,4 +130,3 @@ for li in lisi:
 
             image.paste(secmain, (753, 135), secmain)
             image.save(mmm)
-'''
