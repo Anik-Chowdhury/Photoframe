@@ -1,3 +1,13 @@
+'''
+I create 3 folder which one is 'pic' which download images from google drive... another 'edited pic' which add roll and name in template and last folder 'final pic' where final edited (tamplate+image+name + roll) picture stored.
+Note: download images from google drive only works one time because google block IP and give you corrupted image.
+the code will not work if there is any corrupted image in the 'pic' folder
+'''
+
+
+
+
+
 from pandas import *
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 import requests
