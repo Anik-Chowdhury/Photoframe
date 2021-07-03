@@ -70,7 +70,7 @@ if __name__ == "__main__":
         file_id = ww
         destination = e
         download_file_from_google_drive(file_id, destination)
-
+'''
 arr = os.listdir('F:/last/pic')
 
 picinpicfolder = []
@@ -140,3 +140,4 @@ for li in lisi:
 
             image.paste(secmain, (753, 135), secmain)
             image.save(mmm)
+    '''
