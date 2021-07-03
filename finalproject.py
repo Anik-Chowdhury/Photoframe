@@ -20,7 +20,7 @@ data = read_csv("responseCSV.csv")
 Name = data['Name'].tolist()
 Student_Id = data['Student ID'].tolist()
 Upload_Your_decent_Photo = data['Upload Your decent Photo'].tolist()
-interest = data['Why do you want to join RMA?']
+
 img_list = []
 for i in Upload_Your_decent_Photo:
     j = i[33:]
@@ -88,21 +88,21 @@ for r in Student_Id:
     ss = 'F:/last/editedpic/' + str(r) + '.png'
     edited.append(ss)
 
-for o, p,inter, real in zip(Name, Student_Id, interest, edited):
+for o, p, real in zip(Name, Student_Id, edited):
 
     mimage = Image.open('F:/last/Template-Empty.png')
 
     font_type = ImageFont.truetype("arialbd.ttf", 80, encoding="unit8")
     font_type1 = ImageFont.truetype("arialbd.ttf", 80, encoding="unit8")
-    font_type2 = ImageFont.truetype("arialbd.ttf", 30, encoding="unit8")
+    
     text1 = o
     w, h = font_type.getsize(text1)
     draw = ImageDraw.Draw(mimage)
     roll = str(p)
-    text2= str(inter)
+    
     draw.text(xy=(100, 1600), text=text1,  fill=(255, 255, 255), font=font_type)
     draw.text(xy=(100, 1685), text=roll, fill=(255, 255, 255), font=font_type1)
-    draw.text(xy=(100, 1800), text=text2, fill=(255, 255, 255), font=font_type2)
+    
 
 
     mimage.save(real)
